@@ -10,6 +10,9 @@
     <link rel='stylesheet prefetch'
           href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
 
+    <link href="./dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+  <link href="navbar.css" rel="stylesheet">
     <style>
     #success_message_signin{ display: none;}
     #success_message_signup{ display: none;}
@@ -17,15 +20,54 @@
     </style>
 </head>
 <body>
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer"
+        aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Container</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-6" style="border:1px solid lightblue">
+        <div class="col-md-5" style="border:1px solid lightblue;margin:10px;">
             <form class="well form-horizontal" action="" method="post" id="signup_form">
                 <fieldset>
 
                     <!-- Form Name -->
                     <legend>
-                        <center><h2><b>Registration Form</b></h2></center>
+                        <center><h2><b>Register to World News Digest</b></h2></center>
                     </legend>
                     <br>
 
@@ -151,10 +193,7 @@
                                 <span
                                         class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             </button>
-                            <button type="reset" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRESET
-                                <span
-                                        class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </button>
+
                         </div>
 
 
@@ -164,8 +203,8 @@
             </form>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-5" style="border:1px solid lightblue">
-            <form class="well form-horizontal" action="" method="post" id="signin_form">
+        <div class="col-md-5" style="margin:10px;">
+            <form class="well form-horizontal" style="border:1px solid lightblue;" action="" method="post" id="signin_form">
                 <fieldset>
 
                     <legend>
@@ -203,11 +242,6 @@
                         <div class=""><br>
                             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             <button type="submit" class="btn btn-primary">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
-                                <span
-                                        class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            </button>
-
-                            <button type="reset" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRESET
                                 <span
                                         class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                             </button>
