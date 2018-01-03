@@ -11,11 +11,14 @@
   <title>Navbar Template for Bootstrap</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
   <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="navbar.css" rel="stylesheet">
@@ -25,64 +28,49 @@
 <body>
   <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
     <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarsExampleContainer"
-                aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Container</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer"
+        aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Container</a>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleContainer">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
-                       aria-haspopup="true"
-                       aria-expanded="false">Category</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="#">Current Affairs</a>
-                        <a class="dropdown-item" href="#">Sport</a>
-                        <a class="dropdown-item" href="#">Politics</a>
-                        <a class="dropdown-item" href="#">Science & Technologies</a>
-                        <a class="dropdown-item" href="#">Product Reviews</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
-                       aria-haspopup="true"
-                       aria-expanded="false">Account</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="#">Login/Register</a>
-                        <a class="dropdown-item" href="#">My Profile</a>
-                        <a class="dropdown-item" href="#">My Article</a>
-                        <a class="dropdown-item" href="#">Preferences</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</nav>
+  </nav>
 
   <div class="container-fluid">
     <div class="row">
       <!--jumbotron-->
       <div class="col-md-12">
         <h1 class="text-center">World-News-Digest</h1>
-        <p class="text-center heighted-line">
+        <p class="text-center">
           Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of English to emphasise
           design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for mock-ups.
         </p>
@@ -265,6 +253,42 @@
 
   <!--footer-->
   <footer class="mainfooter" role="contentinfo" style="margin:1.5rem;">
+  <div class="footer-top p-y-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Council</div>
+          </div>
+        </div><!--col-md-2-->
+          <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Social Media</div>
+          </div>
+        </div><!--col-md-2-->
+          <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Boards and Committees</div>
+          </div>
+        </div><!--col-md-2-->
+          <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Departments</div>
+          </div>
+        </div><!--col-md-2-->
+          <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Staff</div>
+          </div>
+        </div><!--col-md-2-->
+          <div class="col-md-2">
+          <div class="card card-primary">
+            <div class="card-header">Fire and Police</div>
+          </div>
+        </div><!--col-md-2-->
+      </div>
+    </div>
+  </div>
   <div class="footer-middle">
   <div class="container">
     <div class="row">
@@ -339,14 +363,7 @@
       <div class="row">
         <div class="col-xs-12">
           <!--Footer Bottom-->
-          <p>
-                        <a href="./index.html">Home</a> |
-                        <a href="./contactus.html">Contact Us</a> |
-                        <a href="./aboutus.html">About Us</a> |
-                        <a href="./clients.html">Our Client</a> |
-                        <a href="./testimony.html">Testimonies</a>
-                    </p>
-          <p class="text-xs-center">&copy; Copyright 2018 - INDIA.  All rights reserved.</p>
+          <p class="text-xs-center">&copy; Copyright 2016 - City of USA.  All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -358,7 +375,7 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
     crossorigin="anonymous"></script>
-
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
   <script src="./dist/js/bootstrap.min.js"></script>

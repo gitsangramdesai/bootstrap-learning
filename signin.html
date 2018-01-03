@@ -10,54 +10,77 @@
     <link rel='stylesheet prefetch'
           href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-  <link href="navbar.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="bs-carousel.css" rel="stylesheet">
+
     <style>
     #success_message_signin{ display: none;}
     #success_message_signup{ display: none;}
+    .input-group-addon
+    {
+    width:30px;
+    }
 
     </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer"
-        aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Container</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleContainer"
+                aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Container</a>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleContainer">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown02">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Category</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Current Affairs</a>
+                        <a class="dropdown-item" href="#">Sport</a>
+                        <a class="dropdown-item" href="#">Politics</a>
+                        <a class="dropdown-item" href="#">Science & Technologies</a>
+                        <a class="dropdown-item" href="#">Product Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Account</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Login/Register</a>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Article</a>
+                        <a class="dropdown-item" href="#">Preferences</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
     </div>
-  </nav>
+</nav>
 
 <div class="container">
     <div class="row">
@@ -96,21 +119,21 @@
                     </div>
 
                     <div class="form-group">
-                        <label class=" control-label">Department / Office</label>
+                        <label class=" control-label">Place</label>
                         <div class=" selectContainer">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                                <select name="department" class="form-control selectpicker">
-                                    <option value="">Select your Department/Office</option>
-                                    <option>Department of Engineering</option>
-                                    <option>Department of Agriculture</option>
-                                    <option>Accounting Office</option>
-                                    <option>Tresurer's Office</option>
-                                    <option>MPDC</option>
-                                    <option>MCTC</option>
-                                    <option>MCR</option>
-                                    <option>Mayor's Office</option>
-                                    <option>Tourism Office</option>
+                                <select name="state" class="form-control selectpicker">
+                                    <option value="">Select</option>
+                                    <option>Maharashtra</option>
+                                    <option>Karnataka</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Gujarat</option>
+                                    <option>Tamilnadu</option>
+                                    <option>Haryana</option>
+                                    <option>Delhi</option>
+                                    <option>West Bengal</option>
+                                    <option>Aassam</option>
                                 </select>
                             </div>
                         </div>
@@ -253,6 +276,95 @@
     </div>
 </div>
 
+  <!--footer-->
+  <footer class="mainfooter" role="contentinfo" style="margin:1.5rem;">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Address</h4>
+          <address>
+								<ul class="list-unstyled">
+									<li>
+                    City Hall<br>
+										212  Street<br>
+										Lawoma<br>
+										735<br>
+									</li>
+									<li>
+										Phone: 0
+									</li>
+								</ul>
+							</address>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Popular Services</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Website Information</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Popular Departments</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Parks and Recreation</a></li>
+            <li><a href="#">Public Works</a></li>
+            <li><a href="#">Police Department</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Mayor and City Council</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!--Footer Bottom-->
+          <p>
+                        <a href="./index.html">Home</a> |
+                        <a href="./contactus.html">Contact Us</a> |
+                        <a href="./aboutus.html">About Us</a> |
+                        <a href="./clients.html">Our Client</a> |
+                        <a href="./testimony.html">Testimonies</a>
+                    </p>
+          <p class="text-xs-center">&copy; Copyright 2018 - INDIA.  All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
@@ -337,10 +449,10 @@ $(document).ready(function() {
                      }
                 }
             },
-			 department: {
+			 state: {
                 validators: {
                     notEmpty: {
-                        message: 'Please select your Department/Office'
+                        message: 'Please select your Place'
                     }
                 }
             },

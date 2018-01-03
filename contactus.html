@@ -11,58 +11,76 @@
     <title>Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <link href="bs-carousel.css" rel="stylesheet">
+    <style>
+        .progress-bar{
+        height:2rem;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
-        <div class="container">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleContainer"
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleContainer"
                 aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Container</a>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Container</a>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleContainer">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-
-            </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Category</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Current Affairs</a>
+                        <a class="dropdown-item" href="#">Sport</a>
+                        <a class="dropdown-item" href="#">Politics</a>
+                        <a class="dropdown-item" href="#">Science & Technologies</a>
+                        <a class="dropdown-item" href="#">Product Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Account</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Login/Register</a>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Article</a>
+                        <a class="dropdown-item" href="#">Preferences</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <div class="container-fluid">
         <div class="row">
@@ -108,7 +126,6 @@
             </div>
 
             <div class="col-md-4" style="float:right;margin:5px;">
-
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title" style="margin-top: 0.5 rem">
@@ -162,11 +179,29 @@
                     <div class="panel-footer">
                         <button type="button" class="btn btn-primary px-3">
                             Vote</button>
-                        <a href="#">View Result</a>
+                        <a href="#" data-toggle="modal" data-target="#exampleModal">View Result</a>
                     </div>
                 </div>
-                <br/>
-                <div class="span6">
+            </div>
+        </div>
+    </div>
+
+
+    <!--popup-->
+    <!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Poll Result</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Result Goes Here-->
+          <div class="span6">
                     <h5>Poll: Where do you usually browse</h5>
 
                     <strong>Windows PC</strong>
@@ -204,15 +239,111 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
+</div>
+    <!--popup-->
+
+
+  <!--footer-->
+  <footer class="mainfooter" role="contentinfo" style="margin:1.5rem;">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Address</h4>
+          <address>
+								<ul class="list-unstyled">
+									<li>
+                    City Hall<br>
+										212  Street<br>
+										Lawoma<br>
+										735<br>
+									</li>
+									<li>
+										Phone: 0
+									</li>
+								</ul>
+							</address>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Popular Services</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Payment Center</a></li>
+            <li><a href="#">Contact Directory</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">News and Updates</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Website Information</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Website Tutorial</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Webmaster</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Popular Departments</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Parks and Recreation</a></li>
+            <li><a href="#">Public Works</a></li>
+            <li><a href="#">Police Department</a></li>
+            <li><a href="#">Fire</a></li>
+            <li><a href="#">Mayor and City Council</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <!--Footer Bottom-->
+          <p>
+                        <a href="./index.html">Home</a> |
+                        <a href="./contactus.html">Contact Us</a> |
+                        <a href="./aboutus.html">About Us</a> |
+                        <a href="./clients.html">Our Client</a> |
+                        <a href="./testimony.html">Testimonies</a>
+                    </p>
+          <p class="text-xs-center">&copy; Copyright 2018 - INDIA.  All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
