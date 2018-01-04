@@ -8,6 +8,18 @@ body {
   color: #5a5a5a;
 }
 
+/*banner*/
+.white-font{
+  color:white;
+}
+.banner-bg{
+  margin:5px;
+  background: url('./images/banner/13.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -138,7 +150,7 @@ footer a:hover{
   font-weight: bold;
 }
 .col-subnav .active{
-  border-top:5px solid orange;
+  border-top:5px solid yellow;
  background: white;
   color: black;
 }
@@ -166,4 +178,103 @@ p {
 }
 .badge{
     font-size:11px;
+}
+/*news*/
+.gap-right {
+  margin-right: 10px;
+}
+
+/*HR*/
+hr {
+  height: 4px;
+  margin-left: 15px;
+  margin-bottom:-3px;
+  height:1px;
+}
+.hr-warning{
+  background-image: -webkit-linear-gradient(left, rgba(210,105,30,.8), rgba(210,105,30,.6), rgba(0,0,0,0));
+  margin:4px;
+  height:1px;
+}
+.hr-success{
+  background-image: -webkit-linear-gradient(left, rgba(15,157,88,.8), rgba(15, 157, 88,.6), rgba(0,0,0,0));
+  margin:4px;
+  height:1px;
+}
+.hr-primary{
+  background-image: -webkit-linear-gradient(left, rgba(66,133,244,.8), rgba(66, 133, 244,.6), rgba(0,0,0,0));
+  margin:4px;
+  height:1px;
+}
+.hr-danger{
+  background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+  margin:4px;
+  height:1px;
+}
+hr-dashed-bold {
+	background-color: #fff;
+	border-top: 1px dashed #8c8b8b;
+	background-image: -webkit-linear-gradient(left, rgba(244,67,54,.8), rgba(244,67,54,.6), rgba(0,0,0,0));
+}
+/*edit profile*/
+/**
+ * Panels
+ */
+/*** General styles ***/
+.panel {
+  box-shadow: none;
+}
+.panel-heading {
+  border-bottom: 0;
+}
+.panel-title {
+  font-size: 17px;
+}
+.panel-title > small {
+  font-size: .75em;
+  color: #999999;
+}
+.panel-body *:first-child {
+  margin-top: 0;
+}
+.panel-footer {
+  border-top: 0;
+}
+
+.panel-default > .panel-heading {
+    color: #333333;
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.07);
+}
+
+form label {
+    color: #999999;
+    font-weight: 400;
+}
+
+.form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+}
+
+.profile__contact-info-icon {
+    float: left;
+    font-size: 18px;
+    color: #999999;
+}
+.profile__contact-info-body {
+    overflow: hidden;
+    padding-left: 20px;
+    color: #999999;
+}
+select.form-control
+{
+    height:34px !important;
 }

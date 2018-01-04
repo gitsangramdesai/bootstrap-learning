@@ -1,0 +1,315 @@
+<html>
+<head>
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+    <link href="./dist/css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+    <link href="bs-carousel.css" rel="stylesheet">
+
+    <style>
+        /* make sidebar nav vertical */
+@media (min-width: 768px){
+  .affix-content .container {
+    width: 700px;
+  }
+
+  html,body{
+    background-color: #f8f8f8;
+    height: 100%;
+    overflow: hidden;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .sidebar-nav{
+        position:fixed;
+        width:100%;
+  }
+  .affix-sidebar{
+    padding-right:0;
+    font-size:small;
+    padding-left: 0;
+  }
+  .affix-row, .affix-container, .affix-content{
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .affix-content{
+    background-color:white;
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar{
+    border-radius:0;
+    margin-bottom:0;
+    border:0;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: 769px){
+  .affix-content .container {
+    width: 600px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px){
+  .affix-content .container {
+  width: 900px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1220px){
+  .affix-row{
+    overflow: hidden;
+  }
+
+  .affix-content{
+    overflow: auto;
+  }
+
+  .affix-content .container {
+    width: 1000px;
+  }
+
+  .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .affix-content{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .affix-title{
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom:10px;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse{
+    padding: 0;
+  }
+  .sidebar-nav .navbar li a:hover {
+    background-color: #428bca;
+    color: white;
+  }
+  .sidebar-nav .navbar li a > .caret {
+    margin-top: 8px;
+  }
+}
+
+.sidebar-nav {
+    width: 15%;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="row affix-row">
+    <div class="col-sm-3 col-md-2 affix-sidebar">
+        <div class="sidebar-nav">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".sidebar-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="visible-xs navbar-brand">Sidebar menu</span>
+                </div>
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                    <ul class="nav navbar-nav" id="sidenav01">
+                        <li class="active">
+                            <a href="#" data-toggle="collapse" data-target="#toggleDemo0" data-parent="#sidenav01"
+                               class="collapsed">
+                                <h4>
+                                    Control Panel
+                                    <br>
+                                    <small>IOSDSV <span class="caret"></span></small>
+                                </h4>
+                            </a>
+                            <div class="collapse" id="toggleDemo0" style="height: 0px;">
+                                <ul class="nav nav-list">
+                                    <li><a href="#">ProfileSubMenu1</a></li>
+                                    <li><a href="#">ProfileSubMenu2</a></li>
+                                    <li><a href="#">ProfileSubMenu3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01"
+                               class="collapsed">
+                                <span class="glyphicon glyphicon-cloud"></span> Submenu 1 <span
+                                    class="caret pull-right"></span>
+                            </a>
+                            <div class="collapse" id="toggleDemo" style="height: 0px;">
+                                <ul class="nav nav-list">
+                                    <li><a href="#">Submenu1.1</a></li>
+                                    <li><a href="#">Submenu1.2</a></li>
+                                    <li><a href="#">Submenu1.3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01"
+                               class="collapsed">
+                                <span class="glyphicon glyphicon-inbox"></span> Submenu 2 <span
+                                    class="caret pull-right"></span>
+                            </a>
+                            <div class="collapse" id="toggleDemo2" style="height: 0px;">
+                                <ul class="nav nav-list">
+                                    <li><a href="#">Submenu2.1</a></li>
+                                    <li><a href="#">Submenu2.2</a></li>
+                                    <li><a href="#">Submenu2.3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Normalmenu</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span
+                                class="badge pull-right">42</span></a></li>
+                        <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9 col-md-10 affix-content">
+        <div class="container">
+
+            <h1 class="page-header">
+                Chinese team enters 1 kilometre into Arunachal Pradesh on 28 Dec: Sources claim they had 'road
+                construction machines
+            </h1>
+            <small class="text-info">
+                Published at January 04, 2018 12:25 AM ,0 Comment(s),384 views
+            </small>
+            <div class="">
+                <p>
+                    <strong>New Delhi:</strong> Chinese road-building teams entered around one kilometre inside Indian
+                    territory in Tuting area of Arunachal Pradesh last week but returned after being confronted by
+                    Indian troops, government sources said on Wednesday.
+                </p>
+                <p>
+                    The sources said the civilian teams came for track alignment activities and returned when confronted
+                    by the Indian troops, leaving behind various road building equipment including excavators. According
+                    to local villagers in Arunachal Pradesh, the Chinese team members included civilians as well as
+                    uniformed personnel.
+                </p>
+                <p>
+                    The incident took place on 28 December, nearly four months after the end of the 73-day long Doka La
+                    standoff between Indian and Chinese troops in the Sikkim sector.
+                </p>
+                <p>
+                    The sources said on 28 December, Indian border patrolling personnel observed few Chinese civilians
+                    undertaking track alignment activity one kilometre inside the Indian territory in Tuting area.
+                </p>
+                <p>
+                    They maintained there was "no face off" between the two sides and that the issue is being resolved
+                    through an established mechanism.
+                </p>
+                <p>
+                    The government sources said the road building equipment are lying on the Indian side of the Line of
+                    Actual Control (LAC).
+                </p>
+                <p>
+                    According to local villagers in Arunachal Pradesh, Chinese soldiers were involved in road
+                    construction work in the area and that Indian security personnel intercepted them near Bising
+                    village under Tuting subdivision.
+                </p>
+                <img src="./images/la.jpg" alt="" class="pull-left img-responsive gap-right " width="40%"/>
+                <p>
+                    The villagers said Indian soldiers confronted their Chinese counterparts and seized their road
+                    construction machines including two excavators.
+                </p>
+                <p>
+                    Nyomin Tekseng of Zido village near the frontier and Pema Nyisir of Gelling village said that two
+                    excavators have been confiscated.
+                </p>
+                <p>
+                    The road cutting is also clearly visible from the right bank of Siang river at Gelling which is
+                    about 7-8 kilometres by aerial distance from the site.
+                </p>
+                <p>
+                    Indian and Chinese troops had pitched tents at the freshly cut road and had erected a boulder wall,"
+                    Nyisir said.
+                </p>
+                <p>
+                    The villagers informed a local policeman, who in turn alerted the ITBP deployed in Medog, near
+                    Bishing.
+                </p>
+                <p>
+                    The ITBP personnel reached the spot and asked the Chinese personnel to return.
+                </p>
+                <p>
+                    There was reportedly an exchange of words but the Chinese refused to yield.
+                </p>
+                <p>
+                    The Indian Army also sent a patrol to the faceoff site, where it continues to stay.
+                </p>
+                <p>
+                    Though the site is part of the ITBP's area of responsibility, there is a heavy deployment of the
+                    army in the region.
+                </p>
+                <p>
+                    When contacted, Upper Siang DC Duli Kamduk said, "Our officials in Tuting subdivision have not
+                    reported any Chinese incursion."
+                </p>
+                <p>
+                    State's chief secretary in-charge Marnya Ete said he had no such information.
+                </p>
+
+            </div>
+            <div class="extra">
+                <h5>Tags :
+                    <span class="label label-default">Arunachal pradesh</span>
+                    <span class="label label-default">Chinese intrusion</span>
+                    <span class="label label-default">Doka la standoff</span>
+                    <span class="label label-default">Tibet</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

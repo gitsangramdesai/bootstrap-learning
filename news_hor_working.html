@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+    <link href="./dist/css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+    <link href="bs-carousel.css" rel="stylesheet">
+    <style>
+        /* make sidebar nav vertical */
+@media (min-width: 768px){
+  .affix-content .container {
+    width: 700px;
+  }
+  .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .sidebar-nav{
+        position:relative;
+        width:auto;
+  }
+  .affix-sidebar{
+    padding-right:0;
+    font-size:small;
+    padding-left: 0;
+  }
+  .affix-row, .affix-container, .affix-content{
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .affix-content{
+    background-color:white;
+  }
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar{
+    border-radius:0;
+    margin-bottom:0;
+    border:0;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: 769px){
+  .affix-content .container {
+    width: 600px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px){
+  .affix-content .container {
+  width: 900px;
+  }
+    .affix-content .container .page-header{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1220px){
+  .affix-row{
+    overflow: hidden;
+  }
+
+  .affix-content{
+    overflow: auto;
+  }
+
+  .affix-content .container {
+    width: 1000px;
+  }
+
+  .affix-content .container .page-header{
+    margin-top: 0;
+  }
+  .affix-content{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .affix-title{
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom:10px;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse{
+    padding: 0;
+  }
+  .sidebar-nav .navbar li a:hover {
+    background-color: #428bca;
+    color: white;
+  }
+  .sidebar-nav .navbar li a > .caret {
+    margin-top: 8px;
+  }
+}
+
+.hipsquare{
+background-image:url(./images/bg/old_map.png);
+}
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarsExampleContainer"
+                aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Container</a>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleContainer">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Category</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Current Affairs</a>
+                        <a class="dropdown-item" href="#">Sport</a>
+                        <a class="dropdown-item" href="#">Politics</a>
+                        <a class="dropdown-item" href="#">Science & Technologies</a>
+                        <a class="dropdown-item" href="#">Product Reviews</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown02" data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">Account</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown02">
+                        <a class="dropdown-item" href="#">Login/Register</a>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">My Article</a>
+                        <a class="dropdown-item" href="#">Preferences</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <!--header-->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">World-News-Digest</h1>
+            <p class="text-center heighted-line">
+                Lorem ipsum is a pseudo-Latin text used in web design, typography, layout, and printing in place of
+                English to emphasise
+                design elements over content. It's also called placeholder (or filler) text. It's a convenient tool for
+                mock-ups.
+            </p>
+            <p class="text-center">
+                <a class="btn btn-primary" href="../../components/navbar/" role="button">Subscribe »</a>
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar-nav">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".sidebar-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <span class="visible-xs navbar-brand">Sidebar menu</span>
+                    </div>
+
+                    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                        <ul class="nav navbar-nav" id="sidenav01">
+                            <li class="active">
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo0"
+                                   data-parent="#sidenav01"
+                                   class="collapsed">
+                                    <h4>
+                                        Filter
+                                        <small>Your News</small>
+                                        <br>
+                                        <small>Location <span class="caret"></span></small>
+                                    </h4>
+                                </a>
+                                <div class="collapse" id="toggleDemo0" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="#">India</a></li>
+                                        <li><a href="#">Asia</a></li>
+                                        <li><a href="#">USA</a></li>
+                                        <li><a href="#">Europe</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo"
+                                   data-parent="#sidenav01"
+                                   class="collapsed">
+                                    <span class="glyphicon glyphicon-cloud"></span> Politics <span
+                                        class="caret pull-right"></span>
+                                </a>
+                                <div class="collapse" id="toggleDemo" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="#">World Affairs</a></li>
+                                        <li><a href="#">National Outlook</a></li>
+                                        <li><a href="#">State Newsroom</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo"
+                                   data-parent="#sidenav01"
+                                   class="collapsed">
+                                    <span class="glyphicon glyphicon-cloud"></span> Sport <span
+                                        class="caret pull-right"></span>
+                                </a>
+                                <div class="collapse" id="toggleDemo" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="#">Cricket</a></li>
+                                        <li><a href="#">Tennis</a></li>
+                                        <li><a href="#">Other News</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <a href="#" data-toggle="collapse" data-target="#toggleDemo2"
+                                   data-parent="#sidenav01"
+                                   class="collapsed">
+                                    <span class="glyphicon glyphicon-inbox"></span> Science & Technologies<span
+                                        class="caret pull-right"></span>
+                                </a>
+                                <div class="collapse" id="toggleDemo2" style="height: 0px;">
+                                    <ul class="nav nav-list">
+                                        <li><a href="#">Product Innovation</a></li>
+                                        <li><a href="#">Space Reserch</a></li>
+                                        <li><a href="#">Science Reporter</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Business</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span
+                                    class="badge pull-right">42</span></a></li>
+                            <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h1 class="page-header">
+                Chinese team enters 1 kilometre into Arunachal Pradesh on 28 Dec: Sources claim they had 'road
+                construction machines
+            </h1>
+            <small class="text-info">
+                Published at January 04, 2018 12:25 AM ,0 Comment(s),384 views
+            </small>
+            <div class="">
+                <p>
+                    <strong>New Delhi:</strong> Chinese road-building teams entered around one kilometre inside Indian
+                    territory in Tuting area of Arunachal Pradesh last week but returned after being confronted by
+                    Indian troops, government sources said on Wednesday.
+                </p>
+                <p>
+                    The sources said the civilian teams came for track alignment activities and returned when confronted
+                    by the Indian troops, leaving behind various road building equipment including excavators. According
+                    to local villagers in Arunachal Pradesh, the Chinese team members included civilians as well as
+                    uniformed personnel.
+                </p>
+                <p>
+                    The incident took place on 28 December, nearly four months after the end of the 73-day long Doka La
+                    standoff between Indian and Chinese troops in the Sikkim sector.
+                </p>
+                <p>
+                    The sources said on 28 December, Indian border patrolling personnel observed few Chinese civilians
+                    undertaking track alignment activity one kilometre inside the Indian territory in Tuting area.
+                </p>
+                <p>
+                    They maintained there was "no face off" between the two sides and that the issue is being resolved
+                    through an established mechanism.
+                </p>
+                <p>
+                    The government sources said the road building equipment are lying on the Indian side of the Line of
+                    Actual Control (LAC).
+                </p>
+                <p>
+                    According to local villagers in Arunachal Pradesh, Chinese soldiers were involved in road
+                    construction work in the area and that Indian security personnel intercepted them near Bising
+                    village under Tuting subdivision.
+                </p>
+                <img src="./images/la.jpg" alt="" class="pull-left img-responsive gap-right " width="40%"/>
+                <p>
+                    The villagers said Indian soldiers confronted their Chinese counterparts and seized their road
+                    construction machines including two excavators.
+                </p>
+                <p>
+                    Nyomin Tekseng of Zido village near the frontier and Pema Nyisir of Gelling village said that two
+                    excavators have been confiscated.
+                </p>
+                <p>
+                    The road cutting is also clearly visible from the right bank of Siang river at Gelling which is
+                    about 7-8 kilometres by aerial distance from the site.
+                </p>
+                <p>
+                    Indian and Chinese troops had pitched tents at the freshly cut road and had erected a boulder wall,"
+                    Nyisir said.
+                </p>
+                <p>
+                    The villagers informed a local policeman, who in turn alerted the ITBP deployed in Medog, near
+                    Bishing.
+                </p>
+                <p>
+                    The ITBP personnel reached the spot and asked the Chinese personnel to return.
+                </p>
+                <p>
+                    There was reportedly an exchange of words but the Chinese refused to yield.
+                </p>
+                <p>
+                    The Indian Army also sent a patrol to the faceoff site, where it continues to stay.
+                </p>
+                <p>
+                    Though the site is part of the ITBP's area of responsibility, there is a heavy deployment of the
+                    army in the region.
+                </p>
+                <p>
+                    When contacted, Upper Siang DC Duli Kamduk said, "Our officials in Tuting subdivision have not
+                    reported any Chinese incursion."
+                </p>
+                <p>
+                    State's chief secretary in-charge Marnya Ete said he had no such information.
+                </p>
+            </div>
+            <div class="extra">
+                <h5>Tags :
+                    <span class="label label-default">Arunachal pradesh</span>
+                    <span class="label label-default">Chinese intrusion</span>
+                    <span class="label label-default">Doka la standoff</span>
+                    <span class="label label-default">Tibet</span>
+                </h5>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+</div>
+
+<!--footer-->
+<footer class="mainfooter" role="contentinfo" style="margin:1.5rem;">
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>Address</h4>
+                        <address>
+                            <ul class="list-unstyled">
+                                <li>
+                                    City Hall<br>
+                                    212 Street<br>
+                                    Lawoma<br>
+                                    735<br>
+                                </li>
+                                <li>
+                                    Phone: 0
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>Popular Services</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Payment Center</a></li>
+                            <li><a href="#">Contact Directory</a></li>
+                            <li><a href="#">Forms</a></li>
+                            <li><a href="#">News and Updates</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>Website Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Website Tutorial</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Webmaster</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <!--Column1-->
+                    <div class="footer-pad">
+                        <h4>Popular Departments</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Parks and Recreation</a></li>
+                            <li><a href="#">Public Works</a></li>
+                            <li><a href="#">Police Department</a></li>
+                            <li><a href="#">Fire</a></li>
+                            <li><a href="#">Mayor and City Council</a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!--Footer Bottom-->
+                    <p>
+                        <a href="./index.html">Home</a> |
+                        <a href="./contactus.html">Contact Us</a> |
+                        <a href="./aboutus.html">About Us</a> |
+                        <a href="./clients.html">Our Client</a> |
+                        <a href="./testimony.html">Testimonies</a>
+                    </p>
+                    <p class="text-xs-center">&copy; Copyright 2018 - INDIA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="./dist/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
