@@ -11,16 +11,17 @@
     <title>Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-<!--<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>-->
-<!--<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>-->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="./dist/css/bootstrap.css" rel="stylesheet">
+    <!--<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>-->
+    <!--<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./dist/css/bootstrap.css" rel="stylesheet">
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"/>
 
 
     <!-- Custom styles for this template -->
@@ -29,7 +30,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+<!--<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarsExampleContainer"
@@ -56,11 +57,11 @@
                        aria-haspopup="true"
                        aria-expanded="false">Category</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="#">Current Affairs</a>
-                        <a class="dropdown-item" href="#">Sport</a>
-                        <a class="dropdown-item" href="#">Politics</a>
-                        <a class="dropdown-item" href="#">Science & Technologies</a>
-                        <a class="dropdown-item" href="#">Product Reviews</a>
+                        <a class="dropdown-item" href="sport.html">Current Affairs</a>
+                        <a class="dropdown-item" href="sport.html">Sport</a>
+                        <a class="dropdown-item" href="sport.html">Politics</a>
+                        <a class="dropdown-item" href="sport.html">Science & Technologies</a>
+                        <a class="dropdown-item" href="sport.html">Product Reviews</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -82,7 +83,53 @@
             </form>
         </div>
     </div>
-</nav>
+</nav>-->
+<div class="container">
+    <div class="row">
+         <div class="dropdown dropdown-home">
+                    <a class="btn btn-default dropdown-toggle glyphicon glyphicon-home" href="index.html">
+                    </a>
+                </div>
+         <div class="dropdown ">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        category
+                    </a>
+
+                    <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="sport.html">Current Affairs</a>
+                        <a class="dropdown-item" href="sport.html">Sport</a>
+                        <a class="dropdown-item" href="sport.html">Politics</a>
+                        <a class="dropdown-item" href="sport.html">Science & Technologies</a>
+                        <a class="dropdown-item" href="sport.html">Product Reviews</a>
+                    </span>
+                </div>
+         <div class="dropdown ">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </a>
+
+                    <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="#">Login/Register</a>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="./edit-profile.html">Edit Profile</a>
+                        <a class="dropdown-item" href="#">My Article</a>
+                        <a class="dropdown-item" href="#">Preferences</a>
+                    </span>
+                </div>
+        <div class="col-md-12">
+            <div class="navbar  bg-inverse">
+                <form class="form-inline my-2 my-md-0 pull-right">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
 <div class="container-fluid">
     <div class="row banner-bg">
@@ -103,9 +150,22 @@
     </div>
 
     <!-- content goes here-->
-    <div class="container bootstrap snippets">
+    <div class="container-fluid bootstrap snippets">
+        <div class="row" style="margin-top:15px;">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 style="font-style:italic;">Edit Profile</h3></div>
+            </div>
+        </div>
+    </div>
         <div class="row">
-            <div class="col-xs-12 col-sm-9">
+              <div class="col-xs-12 col-sm-3">
+                  <img src="./images/adv/2.gif" class="img-responsive img-m-8">
+                <img src="./images/adv/1.gif" class="img-responsive img-m-8">
+
+            </div>
+            <div class="col-xs-12 col-sm-6">
                 <form class="form-horizontal">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -126,8 +186,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">  Birthday
-                                <span class="text-info">(MM/DD/YYYY)</span></label>
+                                <label class="col-sm-2 control-label"> Birthday
+                                    <span class="text-info">(MM/DD/YYYY)</span></label>
                                 <div class="col-sm-10">
                                     <div class='input-group date' id='datetimepicker1'>
                                         <input type='text' class="form-control"/>
@@ -141,7 +201,7 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Place</label>
                                 <div class="col-sm-10">
-                                    <select name="state" class="form-control sel-height-fix" >
+                                    <select name="state" class="form-control sel-height-fix">
                                         <option value="">Select Place</option>
                                         <option>Maharashtra</option>
                                         <option>Karnataka</option>
@@ -287,8 +347,9 @@
                                 <div class="col-sm-10 col-sm-offset-2">
                                     <div class="checkbox">
                                         <input type="checkbox" id="checkbox_1">
-                                        <label for="checkbox_1">I Agree to <a href="terms.html">Terms & Conditions of</a>
-                                        <a href="#">World News Digest</a></label>
+                                        <label for="checkbox_1">I Agree to <a href="terms.html">Terms & Conditions
+                                            of</a>
+                                            <a href="#">World News Digest</a></label>
                                     </div>
                                 </div>
                             </div>
@@ -324,6 +385,7 @@
                 </div>
 
             </div>
+
         </div>
     </div>
     <!-- content goes here-->
@@ -451,6 +513,8 @@ $(document).ready(function() {
             );
         });
     });
+
+
 </script>
 </body>
 

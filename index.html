@@ -23,19 +23,18 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+  <!--<nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarsExampleContainer"
                 aria-controls="navbarsExampleContainer" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Container</a>
-
         <div class="collapse navbar-collapse" id="navbarsExampleContainer">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
+                      <span class="glyphicon glyphicon-home" style="font-size:15px;"></span>
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -50,11 +49,11 @@
                        aria-haspopup="true"
                        aria-expanded="false">Category</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown02">
-                        <a class="dropdown-item" href="#">Current Affairs</a>
-                        <a class="dropdown-item" href="#">Sport</a>
-                        <a class="dropdown-item" href="#">Politics</a>
-                        <a class="dropdown-item" href="#">Science & Technologies</a>
-                        <a class="dropdown-item" href="#">Product Reviews</a>
+                        <a class="dropdown-item" href="sport.html">Current Affairs</a>
+                        <a class="dropdown-item" href="sport.html">Sport</a>
+                        <a class="dropdown-item" href="sport.html">Politics</a>
+                        <a class="dropdown-item" href="sport.html">Science & Technologies</a>
+                        <a class="dropdown-item" href="sport.html">Product Reviews</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -76,7 +75,53 @@
             </form>
         </div>
     </div>
-</nav>
+</nav>-->
+<div class="container">
+    <div class="row">
+         <div class="dropdown dropdown-home">
+                    <a class="btn btn-default dropdown-toggle glyphicon glyphicon-home" href="index.html">
+                    </a>
+                </div>
+         <div class="dropdown ">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        category
+                    </a>
+
+                    <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="sport.html">Current Affairs</a>
+                        <a class="dropdown-item" href="sport.html">Sport</a>
+                        <a class="dropdown-item" href="sport.html">Politics</a>
+                        <a class="dropdown-item" href="sport.html">Science & Technologies</a>
+                        <a class="dropdown-item" href="sport.html">Product Reviews</a>
+                    </span>
+                </div>
+         <div class="dropdown ">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </a>
+
+                    <span class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                         <a class="dropdown-item" href="#">Login/Register</a>
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="./edit-profile.html">Edit Profile</a>
+                        <a class="dropdown-item" href="#">My Article</a>
+                        <a class="dropdown-item" href="#">Preferences</a>
+                    </span>
+                </div>
+        <div class="col-md-12">
+            <div class="navbar  bg-inverse">
+                <form class="form-inline my-2 my-md-0 pull-right">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 
   <div class="container-fluid">
     <div class="row banner-bg">
